@@ -18,10 +18,8 @@ public class CameraUSB extends Subsystem {
   //public static boolean CAMERA1=false;
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
-  public void switchCamera(UsbCamera c1, UsbCamera c2){
-    //if(CAMERA1){
-    NetworkTableInstance.getDefault().getTable("");
-    //}
+  public void switchCamera(UsbCamera cam, MjpegServer server){
+    server.setSource(cam);
   }
   @Override
   public void initDefaultCommand() {
