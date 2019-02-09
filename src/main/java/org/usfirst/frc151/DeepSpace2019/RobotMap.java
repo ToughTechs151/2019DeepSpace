@@ -25,4 +25,7 @@ public class RobotMap {
     public static final int BEAK_SOLENOID_PORT_CLOSE = 8;
     public static final int BEAK_SOLENOID_PORT_OPEN = 9;
     public static final int COMPRESSOR = 10;
+
+    public static final int CARGO_LEFT_WHEEL = 11;
+    public static final int CARGO_RIGHT_WHEEL = 12;
 }
