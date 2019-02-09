@@ -85,6 +85,22 @@ public class Cargo extends Subsystem {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+    public void clawGrab() {
+        rightGrabber.set(1.0);
+        leftGrabber.set(1.0);
+    }
 
+    public void clawRelease() {
+        rightGrabber.set(-1.0);
+        leftGrabber.set(-1.0);
+    }
+
+    public void armLift() {
+        cargoArmLift.set(1.0);
+    }
+
+    public void armLower() {
+        cargoArmLift.set(-1.0);
+    }
 }
 
