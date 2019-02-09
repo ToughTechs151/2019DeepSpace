@@ -24,8 +24,8 @@ public class OI {
         
         buttonB = new JoystickButton(joystick, 2);
         buttonX = new JoystickButton(joystick, 3);
-        buttonB.whenPressed(new CargoDrive());
-        buttonX.whenPressed(new HatchDrive());
+        buttonB.whenPressed(new CargoCam());
+        buttonX.whenPressed(new HatchCam());
 
     }
 
