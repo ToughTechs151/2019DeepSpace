@@ -18,13 +18,14 @@ public class HatchDrive extends Command {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
-        Robot.usbCam.cameraSwitch(Robot.cam2, Robot.server);
+        
     }
 
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
         Robot.chassis.negativeDir();
+        
     }
 
     // Make this return true when this Command no longer needs to run execute()
