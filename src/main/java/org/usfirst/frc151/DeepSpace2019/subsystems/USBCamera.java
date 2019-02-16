@@ -8,16 +8,19 @@
 package org.usfirst.frc151.DeepSpace2019.subsystems;
 import edu.wpi.cscore.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.networktables.NetworkTableEntry;
 import edu.wpi.first.networktables.NetworkTableInstance;
 
 /**
  * Add your docs here.
  */
 public class USBCamera extends Subsystem{
-
+    
     public void cameraSwitch (UsbCamera cam, MjpegServer server){
 
-        server.setSource(cam);
+        //server.setSource(cam);
+        NetworkTableEntry entry = NetworkTableInstance.getDefault().getTable("").getEntry("Camera Selection");
+        entry.setValue(cam.getName());
 
     }   
 @Override
