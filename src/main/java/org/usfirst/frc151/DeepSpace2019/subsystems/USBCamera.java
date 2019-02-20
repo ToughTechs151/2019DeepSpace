@@ -27,4 +27,4 @@ public class USBCamera extends Subsystem{
     public void initDefaultCommand() {
 
     }
-}
+}  
